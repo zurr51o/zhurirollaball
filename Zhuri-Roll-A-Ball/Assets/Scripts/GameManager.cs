@@ -66,6 +66,7 @@ public class GameManager : MonoBehaviour
     public void WinGame()
     {
         victoryText.SetActive(true); //Enable out victory text
+        GameOver();
     }
     public void GameOver()
     {
@@ -87,9 +88,10 @@ public class GameManager : MonoBehaviour
         }
     }
     }
-    void Update();
-     if (Player == null)
+    void Update()
     {
+     if (Player == null)
+    
         GameOver();
     }
 }
